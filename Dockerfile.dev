@@ -1,0 +1,20 @@
+FROM node:20-alpine
+
+# Instala o OpenSSL 1.1 e utilitários básicos
+RUN apk add --no-cache openssl
+
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm ci
+
+# Copy source code
+COPY . .
+
+# Generate Prisma client
+RUN npm run db:generate
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]

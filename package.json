@@ -1,0 +1,49 @@
+{
+    "name": "baixada-santista-news",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "lint:fix": "next lint --fix",
+      "format": "prettier --write .",
+      "format:check": "prettier --check .",
+      "db:generate": "prisma generate",
+      "db:push": "prisma db push",
+      "db:migrate": "prisma migrate dev",
+      "db:studio": "prisma studio",
+      "docker:dev": "docker-compose up",
+      "docker:down": "docker-compose down",
+      "docker:build": "docker-compose up --build -d"
+    },
+    "dependencies": {
+      "@prisma/client": "^5.6.0",
+      "bcryptjs": "^2.4.3",
+      "jsonwebtoken": "^9.0.2",
+      "next": "14.0.3",
+      "next-themes": "^0.2.1",
+      "react": "^18",
+      "react-dom": "^18"
+    },
+    "devDependencies": {
+      "@types/bcryptjs": "^2.4.6",
+      "@types/jsonwebtoken": "^9.0.5",
+      "@types/node": "^20",
+      "@types/react": "^18",
+      "@types/react-dom": "^18",
+      "@typescript-eslint/eslint-plugin": "^6.12.0",
+      "@typescript-eslint/parser": "^6.12.0",
+      "autoprefixer": "^10.0.1",
+      "eslint": "^8",
+      "eslint-config-next": "14.0.3",
+      "eslint-config-prettier": "^9.0.0",
+      "eslint-plugin-prettier": "^5.0.1",
+      "postcss": "^8",
+      "prettier": "^3.1.0",
+      "prisma": "^5.6.0",
+      "tailwindcss": "^3.3.0",
+      "typescript": "^5"
+    }
+  }
