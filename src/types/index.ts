@@ -4,7 +4,7 @@ export interface News {
   description: string;
   content: string; 
   news_url: string;
-  image_url?: string; 
+  image_url?: string | null; 
   createdAt: string;
 }
 
